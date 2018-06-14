@@ -25,10 +25,14 @@
     "redux",
     "registry"
   ],
-  "author": "AOS",
+  "authors": [
+    "Pierre-Eric Marchandet <pemarchandet@gmail.com> (http://pem-musing.blogspot.fr/)",
+    "Stephane Barale <stephane.barale@go-aos.io> (https://github.com/C0r3y8)",
+    "AOS"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/aos/redux-hmr-registry/issues"
+    "url": "https://github.com/go-aos/redux-hmr-registry/issues"
   },
   "peerDependencies": {
     "redux": "^3.7.2 || ^4.0.0"
