@@ -1,9 +1,11 @@
 {
   "name": "redux-hmr-registry",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Redux HMR & incremental loading registry",
-  "main": "src/index.js",
-  "module": "es/redux_hmr_registry.js",
+  "repository": "github:go-aos/redux-hmr-registry",
+  "bugs": "https://github.com/go-aos/redux-hmr-registry/issues",
+  "main": "lib/redux-hmr-registry.js",
+  "module": "es/redux-hmr-registry.js",
   "scripts": {
     "build:commonjs": "cross-env NODE_ENV=cjs rollup -c -o lib/redux-hmr-registry.js",
     "build:es": "cross-env BABEL_ENV=es NODE_ENV=es rollup -c -o es/redux-hmr-registry.js",
@@ -14,10 +16,6 @@
     "prepare": "npm run clean && npm test && npm run build",
     "test": "cross-env BABEL_ENV=commonjs jest",
     "test:watch": "npm test -- --watch"
-  },
-  "repository": {
-    "type": "git",
-    "url": "github.com/go-aos/redux-hmr-registry"
   },
   "keywords": [
     "fsm",
@@ -31,9 +29,6 @@
     "AOS"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/go-aos/redux-hmr-registry/issues"
-  },
   "peerDependencies": {
     "redux": "^3.7.2 || ^4.0.0"
   },
