@@ -1,11 +1,17 @@
 {
   "name": "redux-hmr-registry",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Redux HMR & incremental loading registry",
   "repository": "github:go-aos/redux-hmr-registry",
   "bugs": "https://github.com/go-aos/redux-hmr-registry/issues",
   "main": "lib/redux-hmr-registry.js",
   "module": "es/redux-hmr-registry.js",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "src"
+  ],
   "scripts": {
     "build:commonjs": "cross-env NODE_ENV=cjs rollup -c -o lib/redux-hmr-registry.js",
     "build:es": "cross-env BABEL_ENV=es NODE_ENV=es rollup -c -o es/redux-hmr-registry.js",
