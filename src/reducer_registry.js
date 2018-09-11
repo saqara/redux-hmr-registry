@@ -54,4 +54,9 @@ export class ReducerRegistry {
   setRegisterListener (listener) {
     this._emitChange = listener
   }
+
+  unregister (name) {
+    delete this._reducers[name]
+    if (this._emitChange) { this._emitChange(this.reducers) }
+  }
 }

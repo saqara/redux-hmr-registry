@@ -1,6 +1,6 @@
 {
   "name": "redux-hmr-registry",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "Redux HMR & incremental loading registry",
   "repository": "github:go-aos/redux-hmr-registry",
   "bugs": "https://github.com/go-aos/redux-hmr-registry/issues",
